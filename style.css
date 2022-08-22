@@ -1,0 +1,119 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url("assets/Norse-Bold.otf") format("opentype");
+} 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   background-color: black; 
+   display: flex;
+   justify-content: center;
+   
+}
+.container{
+    display:flex;
+    width: min(900px, 70%);
+   
+}
+.left-side {
+    min-width:40%;
+    height: 100vh;
+    background-image: url('assets/halie-west-25xggax4bSA-unsplash.jpg');
+    background-size: cover;
+    color:#FFFFFF;
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: space-between;
+}
+.logo {
+    margin-top: 200px;
+    background: rgba(0, 0, 0, 0.4);
+    font-family: Norse-Bold;
+    font-size: 5rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.credits {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    background-color: white; 
+}
+.top-section, .bottom-section {
+    padding: 5rem 1rem;
+    background-color:#D6D9DC;
+    flex: 1;
+}
+
+
+.top-section p {
+    font-weight: 800; 
+}
+.middle-section, .bottom-section {
+    padding: 1rem;
+}
+.middle-section {
+    background-color: white;
+}
+
+.form-row {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex; 
+  }
+  
+.form-row input {
+    background-color: #FFFFFF;
+    border: 1px solid  #E5E7EB;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 12px;
+    box-sizing: border-box;
+    margin-right: 2rem;
+}
+
+label {
+    font-size: 9px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.first-error-message, .last-error-message, .email-error-message, .phone-error-message, 
+.password-error-message, .confirm-password-error-message {
+    color: red;
+    font-size: 10px;
+}
+
+input.border-success {
+    border: 1px solid green;
+}
+
+input.border-error {
+    border: 1px solid red;
+}
+
+button {
+    border: none;
+    color: white;
+    background-color: #596D48;
+    padding: 10px 25px ;
+    border-radius:  10px;
+}
+
+.login a{
+    text-decoration: none;
+    color:#596D48;
+}
